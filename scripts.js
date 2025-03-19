@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function toggleMenu() {
     nav.classList.toggle("visible");
+	menuBtn.classList.toggle("open");
   }
 
   menuBtn.addEventListener("click", toggleMenu);
