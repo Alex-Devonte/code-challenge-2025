@@ -25,8 +25,35 @@ header {
 	box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.25);
 }
 
-.menu-btn {
+#menu-btn {
+	align-items: center;
+	border-radius: 100%;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6.25px;
+	height: 68px;
+	justify-content: center;
 	order: 1;
+	width: 68px;
+}
+
+#menu-btn .bar {
+	background-color: #323848;
+	height: 4px;
+	width: 30px;
+	transition: all 0.3s ease;
+}
+
+#menu-btn.open span:nth-child(1) {
+	transform: translateY(10px) rotate(45deg);
+}
+#menu-btn.open span:nth-child(2) {
+	opacity: 0;
+}
+
+#menu-btn.open span:nth-child(3) {
+	transform:translateY(-10px) rotate(-45deg);
 }
 
 .navigation {
