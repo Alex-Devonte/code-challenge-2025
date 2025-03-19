@@ -18,6 +18,6 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 
 window.onscroll = function () {
 	if (window.scrollY > 500) {
-		document.getElementById('back-to-top').style.display = "block";
+		document.getElementById("back-to-top").style.display = "flex";
 	}
 };
