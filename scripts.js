@@ -1,16 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const menu = document.getElementById('menu');
 	const menuBtn = document.getElementById('menu-btn');
+	const nav = document.querySelector(".navigation");
 
-	function toggleMenu() {
-		if (menu.style.display === "none") {
-			menu.style.display = "block";
-		} else {
-			menu.style.display = "none";
-		}
-	}
+  function toggleMenu() {
+    nav.classList.toggle("visible");
+  }
 
-	menu.addEventListener('click', toggleMenu);
+  menuBtn.addEventListener("click", toggleMenu);
 });
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
