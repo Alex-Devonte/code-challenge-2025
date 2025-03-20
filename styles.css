@@ -162,7 +162,7 @@ footer {
 	background-color: var(--orange-hex);
 	border-radius: 100%;
 	box-shadow: 0px 4px 16px 0px #00000040;
-	display: flex;
+	display: none;
 	height: 50px;
 	justify-content: center;
 	right: 50px;
