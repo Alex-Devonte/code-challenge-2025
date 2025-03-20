@@ -49,7 +49,7 @@ document
   });
 
 window.onscroll = function () {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 200) {
     document.getElementById("back-to-top").style.display = "flex";
   }
 };
