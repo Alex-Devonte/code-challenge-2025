@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
 });
 
 window.onscroll = function () {
-	if (window.scrollY > 500) {
-		document.getElementById("back-to-top").style.display = "flex";
-	}
+	if (window.scrollY > 300) {
+    document.getElementById("back-to-top").style.display = "flex";
+  }
 };
