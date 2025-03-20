@@ -23,13 +23,13 @@
 					/>
 				</picture>
 			</a>
-			<button id="menu-btn" class="menu-btn">
+			<button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open Menu">
 				<span class="bar"></span>
 				<span class="bar"></span>
 				<span class="bar"></span>
 			</button>
 
-			<nav id="menu" class="navigation">
+			<nav id="menu" class="navigation" role="navigation">
 				<ul class="navigation-list">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">About</a></li>
@@ -55,7 +55,7 @@
 							<source srcset="assets/image-mobile.jpg" media="(max-width: 768px)" />
 							<source srcset="assets/image.jpg 1x, assets/image@2x.jpg 2x" media="(max-width: 1400px)" />
 							<img src="assets/image.jpg" alt="Placeholder Image"
-						>
+						/>
 						</picture>
 					</div>
 				</div>
@@ -70,8 +70,8 @@
 					</div>
 
 					<form id="contact-form">
-						<input type="text" id="name" placeholder="Name" required>
-						<input type="email" id="email" placeholder="Email" required>
+						<input type="text" id="name" placeholder="Name" aria-label="Name" required>
+						<input type="email" id="email" placeholder="Email" aria-label="Email" required>
 						<button class="btn">Submit</button>
 					</form>
 				</div>
@@ -80,7 +80,7 @@
 
 		<footer>
 			<p>&copy;2025 - DynamiX</p>
-			<a href="#" id="back-to-top"><img src="assets/arrow-up.svg" alt="Back to Top" id="arrow"/></a>
+			<a href="#" id="back-to-top" aria-label="Back to Top"><img src="assets/arrow-up.svg" alt="" id="arrow"/></a>
 		</footer>
 		<script src="scripts.js"></script>
 	</body>
