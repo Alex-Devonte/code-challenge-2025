@@ -193,6 +193,13 @@ section {
 		align-items: center;
 }
 
+.column-1 {
+	align-self: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 
 #contact-form {
 	display: grid;
