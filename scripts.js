@@ -3,11 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navigation");
 
   function toggleMenu() {
+    const isOpen = menuBtn.getAttribute("aria-expanded") === "true";
+
     nav.classList.toggle("visible");
+
+    menuBtn.setAttribute("aria-expanded", !isOpen);
+    menuBtn.setAttribute("aria-label", isOpen ? "Open Menu" : "Close Menu");
     menuBtn.classList.toggle("open");
   }
 
   menuBtn.addEventListener("click", toggleMenu);
+
+  //Close nav menu when user presses ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.classList.contains("visible")) {
+      toggleMenu();
+    }
+  });
 });
 
 document
