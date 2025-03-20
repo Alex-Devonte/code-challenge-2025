@@ -12,6 +12,7 @@ body {
 	color: var(--dark-gray-hex);
 	font-size: 16px;
 	font-family: 'DM Sans', Arial, sans-serif;
+	letter-spacing: 0.5px;
 }
 
 header {
@@ -200,7 +201,6 @@ section {
 	justify-content: space-around;
 }
 
-
 #contact-form {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -223,6 +223,18 @@ section {
 
 #contact-form input::placeholder {
 	color: var(--dark-gray-hex);
+}
+
+@media screen and (min-width: 950px) {
+	.header-wrapper {
+		margin: 0 auto;
+		text-align: center;
+		width: 612px;
+	}
+
+	#contact-form .btn {
+		margin: 0 auto;
+	}	
 }
 
 @media screen and (max-width: 700px) {
