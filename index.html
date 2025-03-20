@@ -51,7 +51,12 @@
 					</div>
 
 					<div class="column column-2">
-						<img src="assets/image@2x.jpg">
+						<picture>
+							<source srcset="assets/image-mobile.jpg" media="(max-width: 768px)" />
+							<source srcset="assets/image.jpg 1x, assets/image@2x.jpg 2x" media="(max-width: 1400px)" />
+							<img src="assets/image.jpg" alt="Placeholder Image"
+						>
+						</picture>
 					</div>
 				</div>
 			</section>
